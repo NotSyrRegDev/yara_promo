@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="./es/camera.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+
+   
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+
+
+    <!--------------LOADING---------------->
+
+    <div class="loading_page">
+        <div class="center_div">
+            <div>
+                <img src="./camera.png" alt="Camera" class="camera_form" >
+                <h1 class="focus_headline" >Focus</h1>
+                <div class="bar"></div>
+            </div>
+           
+        </div>
+    </div>
+
+    <!--------------END LOADING---------------->
+
+
+    <!--------------MAIN PAGE---------------->
+    <div id="focus_app">
+        <div class="focus_app_header">
+            <div class="right_div">
+                <div class="d-flex-c">
+                    <h1 class="yara_logo_headline">يرى</h1>
+                    <img src="./camera.png" alt="Logo" class="mx-1 yara_logo" >
+                </div>
+                
+            </div>
+            <div class="left_div">
+                <img src="./left-arrow.png" alt="Left Arrow"   >
+            </div>
+    </div>
+        <div class="main_page">
+
+            <div class="container-big">
+                <div class="flex-col action_form bg_light">
+                        <img src="./camera.png" alt="Camera" class="camera_form small_camera" >
+                        <h1 class="focus_headline headline_sub" >Focus</h1>
+                        <h1 class="my-5 focus_small_headline headline_md">Enterprise account manager</h1>
+                      
+                        <div class="form_options_div">
+                            <form action="" method="POST" >
+                   
+                                <input type="text" placeholder="Name"  class="input_form">
+                                
+                                <input type="text" placeholder="Email"  class="input_form">
+                                
+                                <div class="d-flex-c f-sp">
+
+                                    <input type="text" placeholder="Civil Registry"  class="input_form">
+        
+                                    <input type="date" placeholder="DD\MM\YY"  class="input_form">
+
+                                </div>
+
+
+                                <input type="text" placeholder="Postion"  class="input_form">
+
+                                <input type="text" placeholder="Phone Number"  class="input_form">
+
+                                <input type="text" placeholder=" Facility Name"  class="input_form">
+            
+                                <input type="text" placeholder=" Commercial Register"  class="input_form">
+
+                                <div class="d-flex-c f-sp">
+                                    <input type="text" placeholder="Activity"  class="input_form">
+                                    <input type="text" placeholder="Location"  class="input_form">
+
+                                </div>
+
+            
+                                <button class="btn_form_action">Register</button>
+                            
+                                </form>
+                        </div>
+                 
+                </div>
+            </div>
+    
+        </div>
+    </div>
+   
+
+ <!--------------END MAIN PAGE---------------->
+
+    
+
+    <script>
+
+       
+
+            function hideLoading() {
+                let loadingRef = document.querySelector('.loading_page');
+
+                let appRef = document.querySelector('#focus_app');
+
+                loadingRef.style.display = 'none';
+                appRef.style.display = 'initial';
+            }
+
+        setTimeout(() => {
+            hideLoading();
+        }, 1500);
+    </script>
+
+</body>
+</html>

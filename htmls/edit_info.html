@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;500;700&family=Fredoka+One&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/utlity.css">
+
+</head>
+
+<body>
+
+    <div id="focus_app">
+
+        <div class="main_page container-mid">
+
+            <section class="info_section">
+                <div class="mt-5"></div>
+                <h1 class="main_headline">Edit Your Info</h1>
+    
+
+                <div class="owner_info">
+
+                    <div class="owner_card_info">
+                        <img src="../assets/images/icons/avatar.png" alt="" class="avatar_owner">
+
+                        
+                            <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> 
+                                <strong>Name: </strong> </h3>
+                                <div class="input_contain_div">
+                                <input type="text" readonly  class="input_info" value="Moaz Alfifi" >
+                                <img src="../assets/images/icons/edit.png" class="card_mid_icon edit_input_icon"  alt="">
+                        </div>
+                            <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> 
+                                <strong>Civil Registery: </strong> </h3>
+                                <div class="input_contain_div">
+                                <input type="text" readonly class="input_info" value="20124412" >
+                                <img src="../assets/images/icons/edit.png" class="card_mid_icon edit_input_icon"  alt="">
+                        </div>
+
+                            <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> 
+                                <strong>Agency Name:: </strong> </h3>
+                                <div class="input_contain_div">
+                                <input type="text" readonly class="input_info" value="The  Productder" >
+                                <img src="../assets/images/icons/edit.png" class="card_mid_icon edit_input_icon"  alt="">
+                        </div>
+                       
+                            <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> 
+                                <strong>Email: </strong> </h3>
+                                <div class="input_contain_div">
+                                <input type="text" readonly class="input_info" value="Mozzaz@gmail.com" >
+                                <img src="../assets/images/icons/edit.png" class="card_mid_icon edit_input_icon"  alt="">
+                        </div>
+                            <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> 
+                                <strong>Phone Number: </strong> </h3>
+                                <div class="input_contain_div">
+                                <input type="text" readonly class="input_info" value="+96655948343" >
+                                <img src="../assets/images/icons/edit.png" class="card_mid_icon edit_input_icon"  alt="">
+                        </div>
+                            <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> 
+                                <strong>Postion: </strong> </h3>
+                                <div class="input_contain_div">
+                                <input type="text" readonly class="input_info" value="+Controller" >
+                                <img src="../assets/images/icons/edit.png" class="card_mid_icon edit_input_icon"  alt="">
+                        </div>
+                            <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> 
+                                <strong>About: </strong> </h3>
+                                <div class="input_contain_div">
+                                <textarea type="text" readonly class="input_info" style="min-height: 15rem;"  value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsa laboriosam " > </textarea>
+                                <img src="../assets/images/icons/edit.png" class="card_mid_icon edit_input_icon"  alt="">
+                        </div>
+                       
+                        <button type="submit" class="form_btn">Submit</button>
+                   
+                    </div>
+                   
+
+                   
+
+                </div>
+
+         
+        </section>
+    </div>
+
+    
+
+
+    <!--------------LOADING---------------->
+
+    <div class="loading_page">
+        <div class="center_div">
+            <div>
+                <img src="./assets/images/camera.png" alt="Camera" class="camera_form" >
+                <h1 class="focus_headline" >Focus</h1>
+                <div class="bar"></div>
+            </div>
+           
+        </div>
+    </div>
+
+    <!--------------END LOADING---------------->
+
+
+   
+    
+    <script>
+
+       
+
+function hideLoading() {
+    let loadingRef = document.querySelector('.loading_page');
+
+    let appRef = document.querySelector('#focus_app');
+    let headerRef = document.querySelector('.focus_app_header');
+
+    loadingRef.style.display = 'none';
+    appRef.style.display = 'initial';
+    headerRef.style.display = 'initial';
+}
+
+setTimeout(() => {
+hideLoading();
+}, 500);
+</script>
+
+   
+
+
+</body>
+</html>

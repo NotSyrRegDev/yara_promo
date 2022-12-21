@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;500;700&family=Fredoka+One&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/utlity.css">
+
+</head>
+
+<body>
+
+    <div id="focus_app">
+
+        <div class="main_page container-mid">
+
+            <section class="info_section">
+                <div class="mt-5"></div>
+                <h1 class="main_headline">Profile Page</h1>
+    
+                <section class="owner_page_seciton">
+                    <div class="grid_owner">
+                        <div class="">
+
+                            <div class="owner_info">
+
+                                <div class="owner_card_info">
+                                    <img src="../assets/images/icons/avatar.png" alt="" class="avatar_owner">
+                                    <h3 class="subheadline_info"  > <div class="mr-1 box_info_small"></div> <span> <strong>Name: </strong> Moaaz Alfifi</span></h3>
+                                    <h3 class="subheadline_info" > <div class="mr-1 box_info_small"></div> <span> <strong>Civil Registery:</strong> 20124412 </span> </h3>
+
+                                    <h3 class="subheadline_info" > <div class="mr-1 box_info_small"></div> <span> <strong>Agency Name:</strong> The Produc </span> </h3>
+                                    <h3 class="subheadline_info" > <div class="mr-1 box_info_small">
+
+                                    </div> <span> <strong>Email:</strong> mooaz@gmail.com</span> </h3>
+                                    <h3 class="subheadline_info" > <div class="mr-1 box_info_small"></div> <span><strong>Phone Number:</strong> +9665534334</span> </h3>
+                                    <h3 class="subheadline_info" > <div class="mr-1 box_info_small">
+
+                                    </div>  <span> <strong>Postion:</strong> +9665534334</span> </h3>
+                                    <p class="main_p_small mt-1">
+                                        <strong>About:</strong> 
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsa laboriosam .
+                                    </p>
+                                    <button class="action_owner">Edit Info</button>
+                                </div>
+                               
+
+                               
+
+                            </div>
+
+                         
+
+  
+
+                        </div>
+                    </div>
+                </section>
+                <div class="mt-5"></div>
+          
+         
+        </div>
+    </div>
+
+    
+
+
+    <!--------------LOADING---------------->
+
+    <div class="loading_page">
+        <div class="center_div">
+            <div>
+                <img src="./assets/images/camera.png" alt="Camera" class="camera_form" >
+                <h1 class="focus_headline" >Focus</h1>
+                <div class="bar"></div>
+            </div>
+           
+        </div>
+    </div>
+
+    <!--------------END LOADING---------------->
+
+    <script>
+        function openCity(evt, cityName) {
+
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+
+    
+    <script>
+
+       
+
+function hideLoading() {
+    let loadingRef = document.querySelector('.loading_page');
+
+    let appRef = document.querySelector('#focus_app');
+    let headerRef = document.querySelector('.focus_app_header');
+
+    loadingRef.style.display = 'none';
+    appRef.style.display = 'initial';
+    headerRef.style.display = 'initial';
+}
+
+setTimeout(() => {
+hideLoading();
+}, 500);
+</script>
+
+
+<script>
+    let closeIcon = document.getElementById('close_popup_video');
+          let popupDiv = document.getElementById('popup_video');
+          let iframeDiv = document.getElementById('live_video_frame');
+  
+          function showSection( param ) {
+              popupDiv.classList.toggle('active');
+              if (param == "one") {
+                  iframeDiv.src = "https://www.youtube.com/embed/8KGXSjtS5pk";
+              }
+              if (param == "two") {
+                  iframeDiv.src = "https://www.youtube.com/embed/1-iS7LArMPA";
+              }
+              if (param == "three") {
+                  iframeDiv.src = "https://www.youtube.com/embed/b-PyEswUenE";
+              }
+              if (param == "four") {
+                  iframeDiv.src = "https://www.youtube.com/embed/-5KAN9_CzSA";
+              }
+        
+            
+          }
+  
+          closeIcon.addEventListener('click' , () => {
+              popupDiv.classList.toggle('active');
+              iframeDiv.src = "";
+          })
+  
+      </script>
+  
+
+
+
+</body>
+</html>
